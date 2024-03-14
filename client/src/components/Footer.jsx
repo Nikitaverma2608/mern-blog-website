@@ -1,6 +1,6 @@
 import { Footer } from "flowbite-react";
 import { Link } from "react-router-dom";
-
+import { BsFacebook, BsInstagram, BsGithub, BsDribbble, BsLinkedin } from 'react-icons/bs';
 
 
 export default function FooterCom() {
@@ -49,14 +49,21 @@ export default function FooterCom() {
                     </Footer.Link>
                   </Footer.LinkGroup>
                 </div>
-                  
-                </div>
+                
+          </div>
             </div>
             <Footer.Divider/>
-            <div className="">
+            <div className="w-full sm:flex sm:items-center sm:justify-between">
               <Footer.Copyright href="#" by="Nicks Blog" year={new Date().getFullYear()}/>
               
-          
+              <div className="flex gap-6 sm:mt-0 mt-4 sm:justify-center">
+            <Footer.Icon href='#' icon={BsFacebook}/>
+            <Footer.Icon href='#' icon={BsInstagram}/>
+            <Footer.Icon href='https://www.linkedin.com/in/nikita-verma-98a9b9215/' icon={BsLinkedin}/>
+            <Footer.Icon href='https://github.com/Nikitaverma2608' icon={BsGithub}/>
+            <Footer.Icon href='#' icon={BsDribbble}/>
+
+          </div>
           </div>
             
 

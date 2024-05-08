@@ -56,11 +56,6 @@ export default function Header() {
             <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">Nicks Blog  </span>
             
         </Link>
-        {/* <form>
-            <TextInput type="text" placeholder="Search" rightIcon={AiOutlineSearch} className="hidden lg:inline"/>
-
-            
-        </form> */}
          <form onSubmit={handleSubmit}>
         <TextInput
           type='text'
